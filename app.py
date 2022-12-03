@@ -9,7 +9,7 @@ initial_scalar = pickle.load(open('scaling.pkl','rb'))
 
 @app.route('/')
 def home():
-    return render_template('home.html') #index page
+    return render_template('index.html') #index page
 
 
 @app.route('/predict_api', methods=['POST']) #using APIs for getting values
@@ -34,7 +34,7 @@ def predict():
     output = model.predict(final_data)
     for i in output:
         final_output = round(i,3)
-    return render_template("home.html",prediction_text ="Price of the house is approximately = {}".format(final_output))
+    return render_template("index.html",prediction_text ="Price of the house is approximately = {}".format(final_output))
 
 
 
