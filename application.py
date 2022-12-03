@@ -3,13 +3,14 @@ from flask import Flask,request,app,jsonify,url_for,render_template
 import pandas as pd
 import numpy as np
 
-app = Flask(__name__) #starting point of application
+application = Flask(__name__) #starting point of application
+app = application
 model = pickle.load(open('regmodel.pkl','rb'))
 initial_scalar = pickle.load(open('scaling.pkl','rb'))
 
 @app.route('/')
-def index():
-    return render_template('index.html') #index page
+def home():
+    return render_template('home.html') #index page
 
 
 @app.route('/predict_api', methods=['POST']) #using APIs for getting values
@@ -34,7 +35,7 @@ def predict():
     output = model.predict(final_data)
     for i in output:
         final_output = round(i,3)
-    return render_template("index.html",prediction_text ="Price of the house is approximately = {}".format(final_output))
+    return render_template("home.html",prediction_text ="Price of the house is approximately = {}".format(final_output))
 
 
 
