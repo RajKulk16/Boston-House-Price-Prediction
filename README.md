@@ -2,10 +2,10 @@
 
 # Tools used - 
 
-1. [Git/Github]
-2. [VSCode]
-3. [Jupyter]
-4. [Heroku]
+1.[Git/Github]
+2.[VSCode]
+3.[Jupyter]
+4.[Heroku]
 
 Steps to follow - 
 1. Create a new environment
