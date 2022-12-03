@@ -3,8 +3,11 @@
 # Tools used - 
 
 1.[Git/Github]
+
 2.[VSCode]
+
 3.[Jupyter]
+
 4.[Heroku]
 
 Steps to follow - 
