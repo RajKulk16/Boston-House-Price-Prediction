@@ -1,6 +1,8 @@
 # Boston-House-Price-Prediction
 
-a) Algorithm - RandomForestRegressor
+a) Algorithms - 
+1. RandomForestRegressor (Chosen and pickled)
+2. LightGBM
 
 b) 2 ways to get inputs - 
 
