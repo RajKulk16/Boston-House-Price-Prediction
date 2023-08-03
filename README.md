@@ -1,5 +1,7 @@
 # Boston-House-Price-Prediction
 
+Developed web-application for predicting house prices with ML models - Random Forest Regressor, LightGBM Regressor - using Flask, Postman (API), Docker, CI/CD using GitHub Actions.
+
 a) Algorithms - 
 1. RandomForestRegressor (Chosen and pickled)
 2. LightGBM
